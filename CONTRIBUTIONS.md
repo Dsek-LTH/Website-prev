@@ -7,3 +7,7 @@ Download the ES Lint config, and make sure your editor use it.
 
 # Unit tests
 All written code should have unit tests. Commits which make the tests fail will not be accepted. 
+
+# Backend Guidelines
+
+# Frontend Guidelines
