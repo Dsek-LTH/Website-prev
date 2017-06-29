@@ -1,18 +1,32 @@
 # Welcome (Please contribute to this document if you think of something)
+If you want to make contributions to the D-Guild webpage please read this document first. To keep the code base clean and easy to read we have some basic rules that needs to be followed.
 
-If you want to make contributions to the D-Guild Webpage please read this document first. To keep the code base clean and easy to read we have some basic rules that needs to be followed. 
+# Code style
+Code shall be linted by ESLint according to the accompanied `.eslintrc`.
 
-# Code standard 
-Download the ES Lint config, and make sure your editor use it.
+Every component should be documented in such a way that is conveys its intention, child component ownership and api usage (i.e. conveying its statefullness).
 
 # Unit tests
-All written code should have unit tests. Commits which make the tests fail will not be accepted. 
+All written code should have unit tests. And all tests must pass before a commit is reviewed.
 
 # Branches
-Currently we have 2 main branches, master and dev. dev is the development branch, all pull requests shall be aimed at dev. Master is our release branch and is unreachable to everyone except the Admin team. Here our current website with it's features will be and as soon as we've made major improvments on the dev branch we will merge them with master and change the hosted website to the code in master!
+Currently we have 2 main branches, `master` and `dev`.
+`dev` is the development branch, all pull requests shall be aimed at `dev`.
+`master` is our release branch and is unreachable to everyone except the admin team.
+`master` is the current state of the website, and as soon as we've made major improvements on the `dev` branch we will merge them with `master`.
 
-Any questions, suggestions or complaints reach out to one of the admins.
+If you have any questions, suggestions or complaints, reach out to one of the admins.
 
-# Backend Guidelines
+# Commits
+If your commit closes an issue, be sure to utilize commit naming conventions such as: `resolves user/repository#{number of issue}`
 
-# Frontend Guidelines
+Example: `Fixed improper render of Profile component, resolves Dsek-LTH/Website#1337`
+
+# Guidelines
+**Thou shalt write thine tests.**
+
+**Thou shalt lint thy code.**
+
+**Thou shalt document thy code.**
+
+**Thou shalt motivate thine refactors.**
