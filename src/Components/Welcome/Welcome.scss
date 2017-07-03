@@ -1,0 +1,64 @@
+@import 'styles/_constants.scss';
+
+.Welcome {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  .newStudents {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Uncle_Sam_%28pointing_finger%29.png");
+  }
+
+  .guild {
+    background-image: url("../../logo.png");
+  }
+
+  .company {
+    background-image: url("http://www.publicdomainpictures.net/pictures/60000/velka/man-in-suit-silhouette.jpg");
+  }
+
+  .background {
+    background-size: auto 98%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .25s;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  .column {
+    width: 100vw;
+    height: calc(100vh / 3);
+    overflow: hidden;
+  }
+
+  @media (min-width: $screen-sm-min) {
+
+  }
+
+  @media (min-width: $screen-md-min) {
+    flex-direction: row;
+
+    .column {
+      width: calc(100vw / 3);
+      height: 100vh;
+    }
+
+    .background {
+      background-size: 98% auto;
+      filter: blur(2px) grayscale(100%);
+    }
+
+    .background:hover {
+      transform: scale(1.01);
+      filter: blur(0px) grayscale(0%);
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+
+  }
+}
+
