@@ -13,12 +13,9 @@ This is the (soon to be) official website of the computer science guild, commit 
 This includes to use standard features like "closing #*".
 
 ## Branches
-Currently we have 2 main branches, master and dev. dev is the development branch, all pull requests shall be aimed at dev. 
-master is our release branch and is unreachable to everyone except the Admin team. Here our current website with it's features will be and as soon as we've made major improvments on the dev branch we will merge them with master and change the hosted website to the code in master! 
+Currently we have one main branch and in a later stage we will have a production branch with the current state of the webpage. The production branch will be unreachable for everyone except the Admin team and they are responsible for merging major, stable changes to it.
 
 Any questions, suggestions or complaints reach out to one of the admins.
 
-
 The night is dark and full of terrors but the fire burns them all away.
 //Mattemagikern
-
