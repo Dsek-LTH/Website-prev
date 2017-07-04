@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group'
+import urls from './urls';
 import './App.css';
 
 import Welcome from './Components/Welcome/Welcome';
@@ -18,9 +19,9 @@ class App extends Component {
             <CSSTransitionGroup transitionName="fade">
               <Switch key={location.key} location={location}>
                 <Route exact path="/" component={Welcome} />
-                <Route path="/new-member" render={() => <div>New Member</div>} />
-                <Route path="/login" render={() => <div>Login</div>} />
-                <Route path="/company-contact" render={() => <div>Company Contact</div>} />
+                <Route path={urls.newMember} render={() => <div>New Member</div>} />
+                <Route path={urls.login} render={() => <div>Login</div>} />
+                <Route path={urls.companyContact} render={() => <div>Company Contact</div>} />
               </Switch>
             </CSSTransitionGroup>
 
