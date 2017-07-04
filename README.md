@@ -1,5 +1,9 @@
 # Website
-This is the (soon to be) official website of the computer science guild, commit to make a difference! 
+This is the (soon to be) official website of the computer science guild, commit to make a difference!
+
+# Dependencies
+This project intends to follow LTS (Long-term Support). At the time of writing the dependencies are:
+- Node v6.11.0
 
 # Rules to participate
 * All code shall have a description
