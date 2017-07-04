@@ -1,3 +1,28 @@
 .App {
   text-align: center;
+  height: 100vh;
+  overflow: hidden;
+
+  // Start style for new component animation
+  .fade-enter {
+    opacity: 0;
+  }
+
+  // End style for new component animation
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  // Start style for old component animation
+  .fade-leave {
+    border-top: 1px solid gray;
+  }
+
+  // End style for old component animation
+  .fade-leave.fade-leave-active {
+    transform: translateY(100%);
+    transition: 0.5s;
+  }
+
 }

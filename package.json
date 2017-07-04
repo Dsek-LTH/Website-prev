@@ -7,7 +7,9 @@
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.9"
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.9",
+    "react-transition-group": "^1.2.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src src/ -o src/",

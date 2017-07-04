@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import urls from './../../urls';
 import './Welcome.css';
 
 /**
@@ -8,15 +10,21 @@ class Welcome extends Component {
   render() {
     return (
       <div className="Welcome">
-        <div className="column">
-          <div className="background newStudents" />
-        </div>
-        <div className="column">
-          <div className="background guild" />
-        </div>
-        <div className="column">
-          <div className="background company" />
-        </div>
+        <Link to={urls.newMember}>
+          <div className="column">
+            <div className="background newStudents" />
+          </div>
+        </Link>
+        <Link to={urls.login}>
+          <div className="column">
+            <div className="background guild" />
+          </div>
+        </Link>
+        <Link to={urls.companyContact}>
+          <div className="column">
+            <div className="background company" />
+          </div>
+        </Link>
       </div>
     );
   }
