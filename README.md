@@ -1,4 +1,6 @@
 # Website
+[![Build Status](https://travis-ci.org/Dsek-LTH/Website.svg?branch=master)](https://travis-ci.org/Dsek-LTH/Website)
+
 This is the (soon to be) official website of the computer science guild, commit to make a difference!
 
 # Dependencies
@@ -24,5 +26,5 @@ Any questions, suggestions or complaints reach out to one of the admins.
 
 
 The night is dark and full of terrors but the fire burns them all away.
-//Mattemagikern
 
+//[Mattemagikern](https://github.com/Mattemagikern)
