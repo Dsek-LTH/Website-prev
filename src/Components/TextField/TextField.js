@@ -1,29 +1,22 @@
-import React, { Component } from 'react';
-import { pick } from 'ramda';
+import React from 'react';
+import './TextField.css';
 
-class TextField extends Component {
-
-  static defaultProps = {
-    type: 'text',
-    placeholder: '',
-  };
-
-  render() {
-
-    const props = pick(
-      [
-        'type',
-        'placeholder',
-        'disabled',
-        'value',
-        'autofocus',
-      ]
-      , this.props);
-
-    return(
-      <input {...props} />
-    );
-  }
-}
+const TextField = ({
+  type = 'text',
+  placeholder = '',
+  disabled = false,
+  autofocus = false,
+  value = ''
+}) => {
+  return (
+    <input
+      type={type}
+      placeholder={placeholder}
+      disabled={disabled}
+      value={value}
+      autofocus={autofocus}
+    />
+  );
+};
 
 export default TextField;
