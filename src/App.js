@@ -16,7 +16,11 @@ class App extends Component {
         <BrowserRouter>
           <Route render={({ location }) => (
 
-            <CSSTransitionGroup transitionName="fade">
+            <CSSTransitionGroup
+              transitionEnterTimeout={500}
+              transitionLeaveTimeout={500}
+              transitionName="fade"
+            >
               <Switch key={location.key} location={location}>
                 <Route exact path="/" component={Welcome} />
                 <Route path={urls.newMember} render={() => <div>New Member</div>} />
