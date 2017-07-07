@@ -6,7 +6,7 @@ const TextField = ({
   placeholder = '',
   disabled = false,
   autofocus = false,
-  value = ''
+  value = null
 }) => {
   return (
     <input
