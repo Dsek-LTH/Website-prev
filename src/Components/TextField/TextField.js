@@ -10,6 +10,7 @@ const TextField = ({
 }) => {
   return (
     <input
+      className='TextField'
       type={type}
       placeholder={placeholder}
       disabled={disabled}
