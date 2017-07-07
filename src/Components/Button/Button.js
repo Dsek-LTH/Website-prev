@@ -7,6 +7,7 @@ const Button = ({
 }) => {
   return (
     <button
+      className="Button"
       onClick={onClick}
     >
       {text}
