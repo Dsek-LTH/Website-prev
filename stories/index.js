@@ -17,7 +17,15 @@ storiesOf('Login', module)
   .add('Basic', () => <Login />);
 
 storiesOf('TextField', module)
-  .add('Text', () => <TextField placeholder='Hello world!' disabled={true} />);
+  .add('Text', () => <TextField placeholder='Username' />)
+  .add('Login Example', () => (
+    <div>
+      <TextField placeholder='Username' />
+      <br />
+      <br />
+      <TextField placeholder='Password' type='password' />
+    </div>
+  ));
 
 storiesOf('Button', module)
-  .add('Basic', () => <Button text='hej'/>);
+  .add('Basic', () => <Button text='Login' />);
