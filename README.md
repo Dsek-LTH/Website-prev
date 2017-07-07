@@ -1,5 +1,11 @@
 # Website
-This is the (soon to be) official website of the computer science guild, commit to make a difference! 
+[![Build Status](https://travis-ci.org/Dsek-LTH/Website.svg?branch=master)](https://travis-ci.org/Dsek-LTH/Website)
+
+This is the (soon to be) official website of the computer science guild, commit to make a difference!
+
+# Dependencies
+This project intends to follow LTS (Long-term Support). At the time of writing the dependencies are:
+- Node v6.11.0
 
 # Rules to participate
 * All code shall have a description
@@ -12,10 +18,17 @@ This is the (soon to be) official website of the computer science guild, commit 
 * Write great commit messages and pull requests.
 This includes to use standard features like "closing #*".
 
+# The next big step
+If you are taking the next step towards writing code and wants to know how its done, read [Contributions](https://github.com/Dsek-LTH/Website/blob/master/CONTRIBUTIONS.md). If you can't find what you are looking for, contact either one of the Admins.
+If you questions is of a bigger nature, such as collaboration with Dsek, our development team or questions regarding the project as whole, please contact [Mattemagikern](https://github.com/Mattemagikern) or [Axel Wihlborg](https://github.com/axelwihlborg).
+
 ## Branches
-Currently we have one main branch and in a later stage we will have a production branch with the current state of the webpage. The production branch will be unreachable for everyone except the Admin team and they are responsible for merging major, stable changes to it.
+Currently we have 2 main branches, master and dev. dev is the development branch, all pull requests shall be aimed at dev.
+master is our release branch and is unreachable to everyone except the Admin team. Here our current website with it's features will be and as soon as we've made major improvments on the dev branch we will merge them with master and change the hosted website to the code in master!
 
 Any questions, suggestions or complaints reach out to one of the admins.
 
+
 The night is dark and full of terrors but the fire burns them all away.
-//Mattemagikern
+
+//[Mattemagikern](https://github.com/Mattemagikern)
