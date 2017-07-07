@@ -36,6 +36,7 @@ describe('Button', () => {
 
     expect(button.props()).toEqual({
       onClick: undefined,
+      className: 'Button',
       children: 'UNDEFINED BUTTON' // children = button text
     });
   });

@@ -19,10 +19,11 @@ describe('TextField', () => {
 
     expect(button.props()).toEqual({
       type: 'text',
+      className: 'TextField',
       placeholder: '',
       disabled: false,
       autofocus: false,
-      value: ''
+      value: null
     });
   });
 });
