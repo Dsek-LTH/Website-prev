@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "enzyme": "^2.9.1",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
+    "ramda": "^0.24.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.9",
-    "react-transition-group": "^1.2.0"
+    "react-test-renderer": "^15.6.1",
+    "react-transition-group": "^1.2.0",
+    "sinon": "^2.3.6"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src src/ -o src/",
@@ -20,6 +24,12 @@
     "test-js": "react-scripts test --env=jsdom",
     "test": "npm run build-css && npm run test-js",
     "watch-test": "npm-run-all -p watch-css test-js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-storybook": "start-storybook -p 6006",
+    "storybook": "npm-run-all -p watch-css start-storybook",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.1.7"
   }
 }
